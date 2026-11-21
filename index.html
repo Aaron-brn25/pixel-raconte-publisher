@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pixel Raconte Publisher</title>
+<style>
+  :root { --fond: #fbfaf7; --texte: #1d1d1f; --doux: #5b5b60; --lien: #1a5fb4; --carte: #ffffff; --bord: #e3e1db; }
+  @media (prefers-color-scheme: dark) { :root { --fond: #17171a; --texte: #ececef; --doux: #a3a3aa; --lien: #8ab4f8; --carte: #222226; --bord: #34343a; } }
+  body { background: var(--fond); color: var(--texte); font: 17px/1.6 system-ui, sans-serif; margin: 0; padding: 32px 16px; }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.8em; margin: 0 0 4px; }
+  h2 { font-size: 1.15em; margin-top: 1.8em; }
+  .doux, footer { color: var(--doux); }
+  a { color: var(--lien); }
+  nav a { margin-right: 18px; }
+  .yt { display: inline-flex; align-items: center; gap: 10px; background: var(--carte); border: 1px solid var(--bord); border-radius: 10px; padding: 10px 14px; margin-top: 8px; }
+  .yt b { color: #ff0000; }
+  footer { margin-top: 3em; font-size: .9em; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+<h1>Pixel Raconte Publisher</h1>
+<p class="doux">Internal tool of an independent creator · not a public service</p>
+
+<p>Pixel Raconte Publisher is a private command-line tool. It schedules the creator's own short educational videos on their own three YouTube channels:</p>
+<ul>
+  <li>Pixel Raconte (French)</li>
+  <li>Curio Box (English)</li>
+  <li>Orbopolis (satisfying simulations)</li>
+</ul>
+
+<h2>What it does</h2>
+<ul>
+  <li>Uploads a finished video with its title, description, tags and thumbnail.</li>
+  <li>Sets the scheduled publication date, so YouTube publishes the video at the planned time.</li>
+  <li>Reads the statistics of these same videos (views, likes, retention) to improve the next ones.</li>
+</ul>
+<p>It is used only by the channel owner, who signs in with Google (OAuth) once per channel. It has no other users and accesses no data of other YouTube users.</p>
+
+<div class="yt"><span>Built on</span> <b>YouTube</b> <span>API Services · <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a></span></div>
+
+<h2>Policies</h2>
+<p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
+
+<footer>Contact: <a href="mailto:btx.business25@gmail.com">btx.business25@gmail.com</a></footer>
+</main>
+</body>
+</html>
